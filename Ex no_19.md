@@ -1,39 +1,49 @@
-# EX 19C program to perform the basic left and right shift operation.  
+# EX 19 C program to perform basic left and right shift operations on a given integer and display the result.
 ## DATE:
+08.06.2026
 ## AIM:
-To write a C program to perform the basic left and right shift operation.  
+To write a C program to perform basic left and right shift operations on a given integer and display the result.
 
 ## Algorithm
+1.Start
 
-1.Start the program and read an integer value a from the user.
+2.Declare variables: num, leftShift, rightShift
 
-2.Perform the left shift operation using c = a << 2.
+3.Display the message: "Enter an integer"
 
-3.Perform the right shift operation using d = a >> 2.
+4.Read the integer num from the user
 
-4.Display the results of both left shift and right shift operations.
+5.Perform left shift: leftShift = num << 1
 
-5.Stop the program.
+6.Perform right shift: rightShift = num >> 1
 
+7.Display the original number num
+
+8.Display the result of the left shift (leftShift)
+
+9.Display the the result of the right shift (rightShift)
+
+10.End
 ## Program:
 ```
-#include<stdio.h>
-int main()
-{
-    int a;
-    scanf("%d",&a);
-    int c=a<<2;
-    int d=a>>2;
-    printf("After Left Shift Operation value of a is:%d\n",c);
-    printf("After Right Shift Operation value of a is:%d\n",d);
+#include <stdio.h>
+int main() {
+    int num, leftShift, rightShift;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    leftShift = num << 1;
+    rightShift = num >> 1;
+    printf("Original number: %d\n", num);
+    printf("After left shift by 1: %d\n", leftShift);
+    printf("After right shift by 1: %d\n", rightShift);
     return 0;
-    
 }
 ```
 
 ## Output:
+<img width="298" height="136" alt="image" src="https://github.com/user-attachments/assets/bb6b128e-6f5f-43b1-8f42-c9ffa00d229b" />
 
-<img width="679" height="164" alt="Screenshot 2026-03-19 142827" src="https://github.com/user-attachments/assets/60586c32-134c-4c3d-8516-30d406d0016c" />
+
 
 
 ## Result:
